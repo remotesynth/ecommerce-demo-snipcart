@@ -3,46 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/products/batduck/</loc>
+    <loc>https://snipcart-demo.netlify.com/products/batduck/</loc>
     <lastmod>2019-07-24T18:52:51-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/products/groot/</loc>
+    <loc>https://snipcart-demo.netlify.com/products/groot/</loc>
     <lastmod>2019-07-24T18:52:51-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/products/minion/</loc>
+    <loc>https://snipcart-demo.netlify.com/products/minion/</loc>
     <lastmod>2019-07-24T18:52:51-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://snipcart-demo.netlify.com/</loc>
     <lastmod>2019-07-24T18:52:51-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/products/pig/</loc>
+    <loc>https://snipcart-demo.netlify.com/products/pig/</loc>
     <lastmod>2019-07-24T18:52:51-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/products/</loc>
+    <loc>https://snipcart-demo.netlify.com/products/</loc>
     <lastmod>2019-07-24T18:52:51-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/products/sanic/</loc>
+    <loc>https://snipcart-demo.netlify.com/products/sanic/</loc>
     <lastmod>2019-07-24T18:52:51-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://snipcart-demo.netlify.com/categories/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://snipcart-demo.netlify.com/tags/</loc>
   </url>
   
 </urlset>

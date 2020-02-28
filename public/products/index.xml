@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Products on My New Hugo Site</title>
-    <link>http://example.org/products/</link>
+    <link>https://snipcart-demo.netlify.com/products/</link>
     <description>Recent content in Products on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 24 Jul 2019 18:52:51 -0400</lastBuildDate>
     
-	<atom:link href="http://example.org/products/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://snipcart-demo.netlify.com/products/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bat Duck</title>
-      <link>http://example.org/products/batduck/</link>
+      <link>https://snipcart-demo.netlify.com/products/batduck/</link>
       <pubDate>Wed, 24 Jul 2019 18:52:51 -0400</pubDate>
       
-      <guid>http://example.org/products/batduck/</guid>
+      <guid>https://snipcart-demo.netlify.com/products/batduck/</guid>
       <description>Not the duck you deserve, but the duck you need right now.</description>
     </item>
     
     <item>
       <title>Groot</title>
-      <link>http://example.org/products/groot/</link>
+      <link>https://snipcart-demo.netlify.com/products/groot/</link>
       <pubDate>Wed, 24 Jul 2019 18:52:51 -0400</pubDate>
       
-      <guid>http://example.org/products/groot/</guid>
+      <guid>https://snipcart-demo.netlify.com/products/groot/</guid>
       <description>I am groot.</description>
     </item>
     
     <item>
       <title>Muscle Minion</title>
-      <link>http://example.org/products/minion/</link>
+      <link>https://snipcart-demo.netlify.com/products/minion/</link>
       <pubDate>Wed, 24 Jul 2019 18:52:51 -0400</pubDate>
       
-      <guid>http://example.org/products/minion/</guid>
+      <guid>https://snipcart-demo.netlify.com/products/minion/</guid>
       <description>ba Papoy tis mucha edhsea rep to pensa</description>
     </item>
     
     <item>
       <title>Paper Pig</title>
-      <link>http://example.org/products/pig/</link>
+      <link>https://snipcart-demo.netlify.com/products/pig/</link>
       <pubDate>Wed, 24 Jul 2019 18:52:51 -0400</pubDate>
       
-      <guid>http://example.org/products/pig/</guid>
+      <guid>https://snipcart-demo.netlify.com/products/pig/</guid>
       <description>Hand-made from the finest paper.</description>
     </item>
     
     <item>
       <title>Sanic</title>
-      <link>http://example.org/products/sanic/</link>
+      <link>https://snipcart-demo.netlify.com/products/sanic/</link>
       <pubDate>Wed, 24 Jul 2019 18:52:51 -0400</pubDate>
       
-      <guid>http://example.org/products/sanic/</guid>
+      <guid>https://snipcart-demo.netlify.com/products/sanic/</guid>
       <description>Cumon step it up!!!</description>
     </item>
     

@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="product-description">
+    <!-- title -->
+    <h1 class="product-description__title">
+        <a href="#">						
+            {{ .Title }}
+            </a>
+    </h1>
+
+    <!-- category and price -->
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 product-description__category secondary-text">
+            {{ .Params.description }}
+        </div>
+        <div class="col-xs-12 col-sm-4 product-description__price">
+            $ {{ .Params.price }}
+        </div>
+    </div>
+
+    <!-- divider -->
+    <hr />
+
+    <!-- sizes -->
+    <div class="sizes-wrapper">
+        {{ .Content }}
+    </div>
+</div>
+{{ end }}
