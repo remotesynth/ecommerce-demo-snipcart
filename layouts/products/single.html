@@ -1,28 +1,47 @@
 {{ define "main" }}
-<div class="product-description">
-    <!-- title -->
-    <h1 class="product-description__title">
-        <a href="#">						
-            {{ .Title }}
-            </a>
-    </h1>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<article class="card-wrapper">
+				<div class="image-holder">
+					<a href="#" class="image-holder__link snipcart-add-item"
+					data-item-id="{{ anchorize .Title }}"
+					data-item-price="{{ .Params.price }}"
+					data-item-url="{{ .RelPermalink }}"
+					data-item-description="{{ .Params.description }}"
+					data-item-image="/images/products/{{ .Params.image }}"
+					data-item-name="{{ .Title }}"></a>
+					<div class="image-liquid image-holder--original" style="background-image: url('/images/products/{{ .Params.image }}')">
+					</div>
+				</div>
 
-    <!-- category and price -->
-    <div class="row">
-        <div class="col-xs-12 col-sm-8 product-description__category secondary-text">
-            {{ .Params.description }}
+				<div class="product-description">
+					<!-- title -->
+					<h1 class="product-description__title">
+						<a href="#">						
+							{{ .Title }}
+							</a>
+					</h1>
+
+					<!-- category and price -->
+					<div class="row">
+						<div class="col-xs-12 col-sm-8 product-description__category secondary-text">
+							{{ .Params.description }}
+						</div>
+						<div class="col-xs-12 col-sm-4 product-description__price">
+							$ {{ .Params.price }}
+						</div>
+					</div>
+
+					<!-- divider -->
+					<hr />
+
+					<!-- sizes -->
+					<div class="sizes-wrapper">
+						{{ .Content }}
+					</div>
+				</div>
+
+			</article>
         </div>
-        <div class="col-xs-12 col-sm-4 product-description__price">
-            $ {{ .Params.price }}
-        </div>
-    </div>
-
-    <!-- divider -->
-    <hr />
-
-    <!-- sizes -->
-    <div class="sizes-wrapper">
-        {{ .Content }}
-    </div>
-</div>
+	</div>
 {{ end }}

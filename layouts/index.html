@@ -1,9 +1,4 @@
 {{ define "main" }}
-<div class="container">
-	<div class="row">
-		<div class="col-xs-24 col-sm-12 col-md-8"><h1>RemoteStore</h1></div>
-		<div class="col-xs-12 col-sm-6 col-md-4 text-right"><a class="btn btn-primary checkout snipcart-checkout">Click here to checkout (<span class="snipcart-items-count"></span>)</a></div>
-	</div>
 	<div class="row">
         {{ $products := where .Site.RegularPages "Section" "products" }}
         {{ range $products }}
@@ -51,12 +46,5 @@
 			</article>
         </div>
         {{ end }}
-
-			</article>
-		</div>
-
 	</div>
-</div>
-<div hidden id="snipcart" data-api-key="ZjA1YjQ1MjItYTJlMy00YzdjLWE1NmQtZTM5MTU1YTVmYmM4NjM3MTgzNTAyMTkwNzkxNzEy"></div>
-<script src="https://cdn.snipcart.com/themes/v3.0.8/default/snipcart.js"></script>
 {{ end }}
