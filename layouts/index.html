@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>My Store</title>
+  <meta name="description" content="My Store">
+  <meta name="author" content="Brian Rinaldi">
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.8/default/snipcart.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/styles.css?v=1.0">
+
+</head>
+
+<body>
+<!--
+Inspired in this dribbble
+https://dribbble.com/shots/986548-Product-Catalog
+-->
+<div class="container">
+	<div class="row">
+		<div class="col-xs-24 col-sm-12 col-md-8"><h1>RemoteStore</h1></div>
+		<div class="col-xs-12 col-sm-6 col-md-4 text-right"><a class="btn btn-primary checkout snipcart-checkout">Click here to checkout (<span class="snipcart-items-count"></span>)</a></div>
+	</div>
+	<div class="row">
+        {{ $products := where .Site.RegularPages "Section" "products" }}
+        {{ range $products }}
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<article class="card-wrapper">
+				<div class="image-holder">
+					<a href="#" class="image-holder__link snipcart-add-item"
+					data-item-id="{{ anchorize .Title }}"
+					data-item-price="{{ .Params.price }}"
+					data-item-url="{{ .RelPermalink }}"
+					data-item-description="{{ .Params.description }}"
+					data-item-image="/images/products/{{ .Params.image }}"
+					data-item-name="{{ .Title }}"></a>
+					<div class="image-liquid image-holder--original" style="background-image: url('/images/products/{{ .Params.image }}')">
+					</div>
+				</div>
+
+				<div class="product-description">
+					<!-- title -->
+					<h1 class="product-description__title">
+						<a href="#">						
+							{{ .Title }}
+							</a>
+					</h1>
+
+					<!-- category and price -->
+					<div class="row">
+						<div class="col-xs-12 col-sm-8 product-description__category secondary-text">
+							{{ .Params.description }}
+						</div>
+						<div class="col-xs-12 col-sm-4 product-description__price">
+							$ {{ .Params.price }}
+						</div>
+					</div>
+
+					<!-- divider -->
+					<hr />
+
+					<!-- sizes -->
+					<div class="sizes-wrapper">
+						{{ .Content }}
+					</div>
+				</div>
+
+			</article>
+        </div>
+        {{ end }}
+
+			</article>
+		</div>
+
+	</div>
+</div>
+<div hidden id="snipcart" data-api-key="ZjA1YjQ1MjItYTJlMy00YzdjLWE1NmQtZTM5MTU1YTVmYmM4NjM3MTgzNTAyMTkwNzkxNzEy"></div>
+<script src="https://cdn.snipcart.com/themes/v3.0.8/default/snipcart.js"></script>
+</body>
+</html>
