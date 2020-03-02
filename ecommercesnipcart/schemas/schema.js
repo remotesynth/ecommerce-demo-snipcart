@@ -43,8 +43,7 @@ export default createSchema({
       {
         title: "Body",
         name: "body",
-        type: 'array', 
-        of: [{type: 'block'}],
+        type: 'text',
         validation: Rule => Rule.required()
       }
     ]

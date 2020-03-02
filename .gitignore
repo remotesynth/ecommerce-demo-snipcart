@@ -1,3 +1,5 @@
 public
 .DS_Store
 ecommercesnipcart/node_modules
+node_modules
+.env

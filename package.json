@@ -1,0 +1,26 @@
+{
+  "name": "ecommerce-demo-snipcart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remotesynth/ecommerce-demo-snipcart.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/remotesynth/ecommerce-demo-snipcart/issues"
+  },
+  "homepage": "https://github.com/remotesynth/ecommerce-demo-snipcart#readme",
+  "dependencies": {
+    "sourcebit": "^0.7.0",
+    "sourcebit-source-sanity": "^0.1.1",
+    "sourcebit-target-hugo": "^0.2.0",
+    "sourcebit-transform-assets": "^0.2.1"
+  }
+}
